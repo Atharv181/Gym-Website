@@ -13,6 +13,7 @@
 
 <body>
     <header class="header">
+
         <!-- left for logo -->
         <div class="left">
             <img src="img/logo.png"  alt="">
@@ -34,26 +35,27 @@
             <button class="btn">CALL US NOW</button>
             <button class="btn">EMAIL US</button>
         </div>
+        
+        <!-- Header content as before -->
         <div class="container">
             <h1>Join The Best Gym In Parbhani Now</h1>
-            <form action="noaction.php">
+            <form action="noaction.php" method="post" onsubmit="return validateForm()">
                 <div class="formgroup">
-                       <input type="text" placeholder="Enter your Name">
-                   </div> 
+                    <input type="text" placeholder="Enter your Name" id="name" name="name" required>
+                </div>
                 <div class="formgroup">
-                    <input type="text" placeholder="Enter your Age">
-                </div> 
+                    <input type="number" placeholder="Enter your Age" id="age" name="age" required>
+                </div>
                 <div class="formgroup">
-                    <input type="text" placeholder="Enter your Gender">
-                </div> 
+                    <input type="text" placeholder="Enter your Gender" id="gender" name="gender" required>
+                </div>
                 <div class="formgroup">
-                    <input type="text" placeholder="Enter your Email">
-                </div> 
-                <button class="btn">Submit</button>
-
+                    <input type="email" placeholder="Enter your Email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn">Submit</button>
             </form>
-
         </div>
     </header>
+    <script src="script.js"></script>
 </body>
 </html>

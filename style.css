@@ -1,4 +1,14 @@
-/* css reset */
+
+body {
+    font-family: 'Baloo Thambi 2', cursive;
+    color: yellow;
+    margin: 0px;
+    padding: 0px;
+    background: url('img/bg.jpg');
+    box-sizing: border-box;
+  }
+  
+  /* css reset */
 body{
     font-family: 'Baloo Thambi 2', cursive;
     color:yellow;
@@ -103,3 +113,7 @@ body{
 .container button{
     width:109px;
 }
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
